@@ -113,7 +113,8 @@ if __name__ == '__main__':
     # sql = """CREATE TABLE ip_data(
     #         ip VARCHAR(255) NOT NULL,
     #         port VARCHAR(255) NOT NULL,
-    #         types VARCHAR(255) NOT NULL
+    #         types VARCHAR(255) NOT NULL,
+    #         PRIMARY KEY(ip)#ip主键
     # )
     # """
     # cursor.execute(sql)
