@@ -127,6 +127,3 @@ if __name__ == '__main__':
     thread1.start()
     thread.join()
     thread1.join()
-
-
-
