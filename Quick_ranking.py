@@ -42,7 +42,7 @@ def xx():
         ips.append(i[0])
     ip_data = random.choice(ips)#随机取出一个ip
     #从数据库中删除该数据
-    delete = "DELETE FROM sheet WHERE ip=%s"
+    delete = "DELETE FROM ip_data WHERE ip=%s"
     cursor.execute(delete,ip_data)
     conn.close()
 
