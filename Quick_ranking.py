@@ -39,8 +39,8 @@ def xx():
     cursor.execute(sql)
     ips = []
     for i in cursor.fetchall():
-        ips = ips.append(i[0])
-    ip_data = random.randint(ips)#随机取出一个ip
+        ips.append(i[0])
+    ip_data = random.choice(ips)#随机取出一个ip
     #从数据库中删除该数据
     delete = "DELETE FROM sheet WHERE ip=%s"
     cursor.execute(delete,ip_data)
